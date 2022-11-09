@@ -1,0 +1,6 @@
+package trigofunctions;
+import static commonfunctions.Commonfunctions.*;
+
+public class Trigofunctions {
+
+}

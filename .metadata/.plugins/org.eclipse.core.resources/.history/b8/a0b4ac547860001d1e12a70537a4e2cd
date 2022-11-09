@@ -1,0 +1,38 @@
+package commonfunctions;
+
+public class Commonfunctions {
+
+	public static int floor(double n)
+	{
+		return (int) n;
+	}
+	
+	public static int ceil(double n)
+	{
+		return n == floor(n) ? floor(n) : floor(n) + 1;
+	}
+	
+	public static int round(double n) {
+		return floor(n * 10 % 10) < 5 ? floor(n) : ceil(n);
+	}
+	public static double abs(double n) {
+		
+		return n < 0 ? -n : n;
+	}
+	
+	public static double pow(double base, int power) throws Exception {
+		if (base == 0 && power == 0) {
+			throw new Exception("O to the power is not defined.");
+		}
+		return power == 0 ? 1 : power > 0 ? base * pow(base, power -1) : 1.0/ pow(base, -power);
+		
+	}
+	
+	public static double square(double n ) {
+		return n * n;
+	}
+	
+	public static int factorial(int n) {
+		return n == 0 ? 1 : n factorial(n-1;)
+	}
+}

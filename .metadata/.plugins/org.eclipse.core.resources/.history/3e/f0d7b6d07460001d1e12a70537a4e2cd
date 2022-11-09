@@ -1,0 +1,18 @@
+package commonfunctions;
+
+public class Commonfunctions {
+
+	public static int floor(double n)
+	{
+		return (int) n;
+	}
+	
+	public static int ceil(double n)
+	{
+		return n == floor(n) ? floor(n) : floor(n) + 1;
+	}
+	
+	public static int round(double n) {
+		return floor(n * 10 % 10);
+	}
+}

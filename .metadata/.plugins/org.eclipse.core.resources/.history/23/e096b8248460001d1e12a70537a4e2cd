@@ -1,0 +1,12 @@
+package main;
+import static trigofunctions.Trigofunctions.sin;
+import static commonfunctions.Commonfunctions.*;
+
+public class Main {
+	
+	public static void main(String[] args)
+	{
+		System.out.println(power(2,2));
+		
+	}
+}

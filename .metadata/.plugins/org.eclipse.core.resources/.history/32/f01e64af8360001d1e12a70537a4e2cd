@@ -1,0 +1,27 @@
+package trigofunctions;
+import static commonfunctions.Commonfunctions.*;
+
+public class Trigofunctions {
+	
+	public static double sin(double x) {
+		double prev = 0, next = 0;
+		
+		int n = 0;
+		double error = 0.0000001;
+		do {
+			try {
+				prev = pow(-1,n) * (pow(x,2*n +1) / factorial(2 * n+ 1));
+				n++;
+				next = pow(-1, n) * (pow(x, 2*n + 1) / factorial(2 * n + 1));
+			} catch (Exception e) {
+			
+				e.printStackTrace();
+				return -1;
+			} 
+		} while (abs(next - prev) > error);
+		
+		return next;
+	}
+	
+
+} 

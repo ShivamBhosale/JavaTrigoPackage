@@ -1,0 +1,17 @@
+package main;
+import static commonfunctions.Commonfunctions.*;
+
+public class Main {
+	
+	public static void main(String[] args)
+	{
+		try {
+			System.out.println(pow(2,0));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		System.out.println(abs(-2));
+		
+	}
+}
