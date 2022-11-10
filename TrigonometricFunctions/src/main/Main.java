@@ -4,9 +4,9 @@ import static trigofunctions.Trigofunctions.*;
 
 public class Main {
 	
-	public static void main(String[] args)
+	public static void main(String[] args) throws Exception 
 	{
-		System.out.println(tan(3));
+		System.out.println(sin(3));
 		
 	}
 }
