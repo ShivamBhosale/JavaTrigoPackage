@@ -3,7 +3,7 @@ import static commonfunctions.Commonfunctions.*;
 
 public class Trigofunctions {
 	
-	public static double sin(double x) {
+	public static double sin(double x) throws Exception {
 		x=NRadian(x);
 		double sin=x;	
 		double sign=-1;
@@ -14,7 +14,7 @@ public class Trigofunctions {
 		return sin;	
 	}
 	
-	public static double cos(double x) {
+	public static double cos(double x) throws Exception {
 		x=NRadian(x);
 		double cos=1;
 		double sign=-1;
@@ -26,7 +26,7 @@ public class Trigofunctions {
 		return cos;	
 	}
 	
-	public static double tan(double x) {
+	public static double tan(double x) throws Exception {
 
 		   double a= sin(x);
 		   double b= cos(x);
