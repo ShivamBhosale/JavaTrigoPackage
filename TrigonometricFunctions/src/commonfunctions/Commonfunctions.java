@@ -2,8 +2,13 @@ package commonfunctions;
 
 public class Commonfunctions {
 	public static final double PI= 3.141592;
-	public static long factorial(long n) {
-		if (n<=0 || n==1) {
+	public static long factorial(long n) throws Exception{
+		if (n<0) {
+		throw new Exception("Cannot find factorial for negative number.");
+		}
+		
+		if (n==0 || n==1) {
+		
 			return 1;
 			}
 		
@@ -31,7 +36,10 @@ public class Commonfunctions {
 			return answer*answer*x;
 	}
 
-	public static double pow(double x, int y) {
+	public static double pow(double x, int y) throws Exception{
+		if(x==0 && y==0){
+			throw new Exception("0 to the power 0 is Undefined.");
+		}
 		double answer=exp(x,y);
 		if (y<0) {
 			return 1/answer;
